@@ -1,5 +1,7 @@
 # strona-egzaminacyjna-3
 
+## Strona o lornetkach
+
 1. Tworzymy logo wektorowe i animację swojego sklepu oraz nazwę swojego sklepu która będzie połączenie nazwy z nazwiskiem
 2. Uzywać .jpg do strony ale mieć .svg loga zapisany
 3. min 10 egzemplarzy danego towaru, pod nim zdjęcie i opis + cena
