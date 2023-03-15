@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="logo.jpg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0444209"
+     inkscape:cx="161.81216"
+     inkscape:cy="545.27824"
+     inkscape:window-width="1198"
+     inkscape:window-height="1000"
+     inkscape:window-x="1795"
+     inkscape:window-y="553"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#ffffff;stroke-width:0.264583"
+       id="path309"
+       cx="58.645931"
+       cy="65.739174"
+       r="33.312916" />
+    <circle
+       style="fill:#ffffff;stroke-width:0.264583"
+       id="path309-5"
+       cx="131.47836"
+       cy="65.738914"
+       r="33.312916" />
+    <ellipse
+       style="fill:#000000;stroke-width:0.264583"
+       id="path531"
+       cx="58.392605"
+       cy="73.212418"
+       rx="17.099785"
+       ry="23.559706" />
+    <ellipse
+       style="fill:#000000;stroke-width:0.264583"
+       id="path531-6"
+       cx="132.99835"
+       cy="73.212425"
+       rx="17.099785"
+       ry="23.559706" />
+    <rect
+       style="fill:#4d4d4d;stroke-width:0.264583"
+       id="rect819"
+       width="158.07803"
+       height="28.372978"
+       x="18.239773"
+       y="112.4786"
+       ry="5.0666027" />
+    <text
+       xml:space="preserve"
+       style="font-size:23.9803px;fill:#000000;stroke-width:0.449629"
+       x="22.146208"
+       y="141.03426"
+       id="text611"
+       transform="scale(1.0393448,0.96214463)"><tspan
+         id="tspan609"
+         style="font-size:23.9803px;fill:#ffffff;stroke-width:0.449629"
+         x="22.146208"
+         y="141.03426"
+         sodipodi:role="line">ALAN-ZOOM</tspan></text>
+  </g>
+</svg>

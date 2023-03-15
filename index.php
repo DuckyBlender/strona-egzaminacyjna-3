@@ -4,80 +4,79 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Lornetki</title>
+    <title>Ducky-Zoom &middot; Strona Główna</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src='main.js'></script>
 </head>
 
-<body>
-    <!-- Main header, dark mode, minimalistic -->
-    <!-- Using tailwind css -->
-    <div class="bg-gray-900 py-4">
-        <div class="mx-auto container flex justify-between items-center">
-            <h1 class="text-gray-100 text-3xl font-bold">Logo</h1>
-            <nav>
-                <ul class="flex items-center">
-                    <li class="mx-4"><a href="#" class="text-gray-100 font-medium hover:text-gray-300">Home</a></li>
-                    <li class="mx-4"><a href="#" class="text-gray-100 font-medium hover:text-gray-300">Services</a></li>
-                    <li class="mx-4"><a href="#" class="text-gray-100 font-medium hover:text-gray-300">About</a></li>
-                    <li class="mx-4"><a href="#" class="text-gray-100 font-medium hover:text-gray-300">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="bg-gray-800 text-gray-100 px-4 py-2 rounded-full outline-none focus:outline-none">
-                Dark
-            </button>
-        </div>
-    </div>
+<body class="bg-gray-800 text-gray-100">
+    <!-- Header -->
+    <?php include_once('./elementy/header.php') ?>
 
     <!-- Main content -->
-    <div class="container mx-auto my-10">
-        <div class="text-center">
-            <h1 class="text-4xl font-bold mb-4">Welcome to our website</h1>
-            <p class="text-lg">We are thrilled to have you here. Our website offers a wide range of products and
-                services to meet your needs. Whether you're looking for fashion, food or travel, you'll find it all
-                here. Browse through our website to explore and discover what we have to offer. Thank you for choosing
-                us!</p>
+    <div class=" my-8">
+        <div class="flex justify-center">
+            <h1 class="text-4xl font-bold text-center">
+                Ducky-Zoom &middot; Lornetki
+            </h1>
+        </div>
+
+
+        <div class="flex flex-wrap p-16">
+            <?php
+            // Connect to the database
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $conn = new mysqli($servername, $username, $password);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            // Check if database exists. If not, create it using the script
+            $result = $conn->query("SHOW DATABASES LIKE 'lornetki'");
+            if ($result->num_rows == 0) {
+                include_once('./elementy/prepare_db.php');
+            }
+
+            // Select database
+            $conn->select_db("lornetki");
+
+            // Select data
+            $result = $conn->query("SELECT * FROM lornetki");
+
+            // Display data. Use flexbox to display it in a grid
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    // Max size of the image is 300x300px, to fix aspect ratio, we need to set max-height to 300px and max-width to 300px
+                    echo "<div class='w-1/3 p-4'>
+                        <div class='bg-gray-900 rounded-lg p-4'>
+                            <img src='./img/" . $row['img'] . "' class='w-full rounded-lg mb-4 shadow-lg'>
+                            <h2 class='text-2xl font-bold mb-2'>" . $row['title'] . "</h2>
+                            <p class='mb-4'>" . $row['description'] . "</p>
+                            <p class='text-xl font-bold'>Cena: " . $row['price'] . " zł</p>
+                        </div>
+                    </div>";
+                }
+            } else {
+                echo "Brak danych";
+            }
+
+
+
+
+
+            ?>
+
         </div>
     </div>
 
+
     <!-- Footer -->
-    
-
-
-
-    <?php
-    // Connect to the mysql xampp database
-    $servername = "localhost";
-
-    // default xampp username and password
-    $username = "root";
-    $password = "";
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password);
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Create database
-    $conn->query("CREATE DATABASE IF NOT EXISTS lornetki");
-
-    // Select database
-    $conn->select_db("lornetki");
-
-    // Create table
-    $conn->query("CREATE TABLE IF NOT EXISTS lornetki (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL, price INT(6) NOT NULL, description VARCHAR(100) NOT NULL, image VARCHAR(100) NOT NULL)");
-
-    // Insert data
-    $conn->query("INSERT INTO lornetki (name, price, description, image) VALUES ('Lornetka 1', 100, 'Opis lornetki 1', 'lornetka1.jpg')");
-
-    // Select data
-    $result = $conn->query("SELECT * FROM lornetki");
-
-    ?>
+    <?php include_once('./elementy/stopka.php') ?>
 </body>
 
 </html>
