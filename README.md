@@ -8,7 +8,7 @@
 - [ ] Umożliwiamy zakup naszego towaru a my tworzymy rachunek dla użytkownika
 - [ ] Trzeba uwzględnić cena brutto, netto, opdatkowaine 23%
 - [ ] Powinna być zakładka dla administratora do której będzie się wchodziło przez hasło a hasło to będzie nazwisko
-- [ ] W zakładce powinno być jak wygląda baza, jakie są rekordy 
+- [ ] W zakładce powinno być jak wygląda baza, jakie są rekordy
 - [x] Strona ma miec stopkę i ma byc tam data aktualizacji i data strony
 - [ ] Elementy dodatkowe strony (windows time + date)
 
