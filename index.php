@@ -17,7 +17,7 @@
     <?php include_once('./elementy/header.php') ?>
 
     <!-- Main content -->
-    <div class=" my-8">
+    <div class="my-8">
         <div class="flex justify-center">
             <h1 class="text-4xl font-bold text-center">
                 Ducky-Zoom &middot; Lornetki
