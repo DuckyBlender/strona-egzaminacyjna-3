@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ducky-Zoom &middot; Strona Główna</title>
+    <title>Alan-Zoom &middot; Strona Główna</title>
     <!-- Set the favicon -->
     <link rel='icon' href='./img/logo.svg' type='image/x-icon' />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -20,7 +20,7 @@
     <div class="my-8">
         <div class="flex justify-center">
             <h1 class="text-4xl font-bold text-center">
-                Ducky-Zoom &middot; Lornetki
+                Alan-Zoom &middot; Lornetki
             </h1>
         </div>
 
