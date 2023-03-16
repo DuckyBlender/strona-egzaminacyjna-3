@@ -9,7 +9,6 @@
     <link rel='icon' href='./img/logo.svg' type='image/x-icon' />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-800 text-gray-100">
@@ -71,9 +70,6 @@
         $result = $conn->query("SELECT * FROM lornetki");
 
         // Show the database structure
-        echo "<p>Struktura bazy danych:</p>";
-        echo "<div class='flex justify-center'>";
-        // Query the database structure
         // The result should look like this
         // ---
         // id | int
@@ -83,7 +79,11 @@
         // price | float
         // ---
 
+
         $columns = $conn->query("SHOW COLUMNS FROM lornetki");
+        echo "<div class='p-8'>";
+        echo "<h2 class='text-center'>Struktura</h3>";
+        echo "<div class='flex justify-center'>";
         echo "<table class='table-auto'>";
         echo "<tr>";
         echo "<th class='px-4 py-2'>Nazwa</th>";
@@ -96,6 +96,8 @@
             echo "</tr>";
         }
         echo "</table>";
+        echo "</div>";
+        echo "</div>";
 
 
 
@@ -103,7 +105,8 @@
 
 
         // Display data
-        echo "<p>Wszystkie rekordy:</p>";
+        echo "<div class='p-8'>";
+        echo "<h2 class='text-center'>Wszystkie rekordy</h3>";
         echo "<div class='flex justify-center'>";
         echo "<table class='table-auto'>";
         echo "<tr>";
@@ -123,6 +126,8 @@
             echo "</tr>";
         }
         echo "</table>";
+        echo "</div>";
+        echo "</div>";
 
 
 
