@@ -56,9 +56,10 @@
         include_once("./elementy/conn_db.php");
 
         // Reset database button
-        echo "<div class='flex justify-center'>";
+        echo "<div class='flex justify-center text-center'>";
         echo "<form method='post' action='./elementy/reset_db.php'>";
-        echo "<input type='submit' value='Resetuj bazę danych' class='bg-gray-900 text-gray-200 rounded-lg p-4 m-4'>";
+        echo "<input type='submit' value='Resetuj bazę danych' class='bg-red-900 text-gray-200 rounded-lg p-4 m-4 hover:bg-red-800'>";
+        echo "<p>UWAGA! Tej operacji nie można cofnąć!</p>";
         echo "</form>";
         echo "</div>";
 

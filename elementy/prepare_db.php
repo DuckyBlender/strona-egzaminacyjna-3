@@ -1,7 +1,4 @@
 <?php
-// Connect to the database
-include_once("./elementy/conn_db.php");
-
 // Create database
 $conn->query("CREATE DATABASE lornetki");
 $conn->select_db("lornetki");

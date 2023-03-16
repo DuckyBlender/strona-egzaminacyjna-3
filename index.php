@@ -25,7 +25,7 @@
 
 
         <div class="flex flex-wrap p-16">
-            <form method="get" action="rachunek.php" class="w-full">
+            <form method="POST" action="rachunek.php" class="w-full">
                 <div class="flex flex-wrap mx-4">
                     <?php
                     // Connect to the database
@@ -53,8 +53,8 @@
                                 <p class='mb-4'>" . $row['description'] . "</p>
                                 <div class='mt-auto'>
                                     <p class='text-xl font-bold'>Cena: " . $row['price'] . " zł</p>
-                                    <input type='checkbox' name='lornetka[]' value='" . $row['id'] . "' class='mr-2'>
-                                    <label for='lornetka'>Dodaj do koszyka</label>
+                                    <input type='number' value='0' type='number' name='" . $row['id'] . "' id='" . $row['id'] . "' min='0' class='w-full rounded-lg p-1 bg-gray-800 text-gray-100 mt-4' placeholder='Ilość'>
+                                    <label for='lornetka' class='text-gray-100 font-bold'>Dodaj do koszyka</label>
                                 </div>
                             </div>
                         </div>";
@@ -62,7 +62,7 @@
 
                         // Buy button at the bottom of the page. It looks for all filled checkboxes and sends them to the rachunek.php file
                         echo "<div class='w-full flex justify-center'>
-                        <button type='submit' class='bg-gray-900 text-gray-100 p-4 rounded-lg shadow-lg mt-8'>Kup</button>
+                        <button type='submit' class='bg-gray-900 text-gray-100 p-4 rounded-lg shadow-lg mt-8 hover:bg-gray-700'>Kup</button>
                     </div>";
                     } else {
                         echo "Brak danych";
