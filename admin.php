@@ -51,8 +51,46 @@
             echo "</form>";
             return;
         }
-        // The password is correct, show the admin panel
-        echo "<p>Witaj w panelu administratora.</p>";
+        // The password is correct, show the database
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $conn = new mysqli($servername, $username, $password);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // Select the database
+        $conn->select_db("lornetki");
+
+        // Select data
+        $result = $conn->query("SELECT * FROM lornetki");
+
+        // Display data
+        echo "<div class='flex justify-center'>";
+        echo "<table class='table-auto'>";
+        echo "<tr>";
+        echo "<th class='px-4 py-2'>ID</th>";
+        echo "<th class='px-4 py-2'>Nazwa</th>";
+        echo "<th class='px-4 py-2'>Opis</th>";
+        echo "<th class='px-4 py-2'>Obraz</th>";
+        echo "<th class='px-4 py-2'>Cena</th>";
+        echo "</tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td class='border px-4 py-2'>" . $row['id'] . "</td>";
+            echo "<td class='border px-4 py-2'>" . $row['title'] . "</td>";
+            echo "<td class='border px-4 py-2'>" . $row['description'] . "</td>";
+            echo "<td class='border px-4 py-2'>" . $row['img'] . "</td>";
+            echo "<td class='border px-4 py-2'>" . $row['price'] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+
+
+
 
 
         ?>

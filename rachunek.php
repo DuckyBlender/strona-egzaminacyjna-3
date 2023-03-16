@@ -4,7 +4,11 @@
 // Get the data from the URL
 // Example URL: http://localhost/rachunek.php?lornetka=7&lornetka=8&lornetka=12
 $lornetki = $_GET['lornetka'];
-
+if ($lornetki == null) {
+    // Redirect to the main page if there are no IDs
+    header("Location: /");
+    exit();
+}
 
 // Connect to the database
 $servername = "localhost";

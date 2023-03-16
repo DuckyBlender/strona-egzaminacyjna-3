@@ -57,7 +57,7 @@
                         while ($row = $result->fetch_assoc()) {
                             echo "<div class='p-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                             <div class='bg-gray-900 rounded-lg p-4 h-full flex flex-col'>
-                                <img src='./img/" . $row['img'] . "' class='w-full rounded-lg mb-4 shadow-lg'>
+                                <img src='./img/" . $row['img'] . "' class='w-full rounded-lg mb-4 shadow-lg' loading='lazy'>
                                 <h2 class='text-2xl font-bold mb-2'>" . $row['title'] . "</h2>
                                 <p class='mb-4'>" . $row['description'] . "</p>
                                 <div class='mt-auto'>
