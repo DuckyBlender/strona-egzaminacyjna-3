@@ -27,7 +27,7 @@
 
         <div class="flex flex-wrap p-16">
             <form method="get" action="rachunek.php" class="w-full">
-                <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-wrap mx-4">
                     <?php
                     // Connect to the database
                     $servername = "localhost";
