@@ -53,15 +53,15 @@
             return;
         }
         // The password is correct, show the database
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $conn = new mysqli($servername, $username, $password);
+        include_once("./elementy/conn_db.php");
 
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        // Reset database button
+        echo "<div class='flex justify-center'>";
+        echo "<form method='post' action='./elementy/reset_db.php'>";
+        echo "<input type='submit' value='Resetuj bazę danych' class='bg-gray-900 text-gray-200 rounded-lg p-4 m-4'>";
+        echo "</form>";
+        echo "</div>";
+
 
         // Select the database
         $conn->select_db("lornetki");
@@ -82,7 +82,7 @@
 
         $columns = $conn->query("SHOW COLUMNS FROM lornetki");
         echo "<div class='p-8'>";
-        echo "<h2 class='text-center'>Struktura</h3>";
+        echo "<h2 class='text-center'>Struktura</h2>";
         echo "<div class='flex justify-center'>";
         echo "<table class='table-auto'>";
         echo "<tr>";
@@ -106,7 +106,7 @@
 
         // Display data
         echo "<div class='p-8'>";
-        echo "<h2 class='text-center'>Wszystkie rekordy</h3>";
+        echo "<h2 class='text-center'>Wszystkie rekordy</h2>";
         echo "<div class='flex justify-center'>";
         echo "<table class='table-auto'>";
         echo "<tr>";
@@ -115,6 +115,7 @@
         echo "<th class='px-4 py-2'>Opis</th>";
         echo "<th class='px-4 py-2'>Obraz</th>";
         echo "<th class='px-4 py-2'>Cena</th>";
+        echo "<th class='px-4 py-2'>Kupione</th>";
         echo "</tr>";
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
@@ -123,6 +124,7 @@
             echo "<td class='border px-4 py-2'>" . $row['description'] . "</td>";
             echo "<td class='border px-4 py-2'>" . $row['img'] . "</td>";
             echo "<td class='border px-4 py-2'>" . $row['price'] . "</td>";
+            echo "<td class='border px-4 py-2'>" . $row['bought'] . "</td>";
             echo "</tr>";
         }
         echo "</table>";

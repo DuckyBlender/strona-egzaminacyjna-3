@@ -1,14 +1,6 @@
 <?php
 // Connect to the database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include_once("./elementy/conn_db.php");
 
 // Create database
 $conn->query("CREATE DATABASE lornetki");
@@ -20,7 +12,8 @@ $conn->query("CREATE TABLE lornetki (
     title TINYTEXT NULL,
     description TEXT NULL,
     img TEXT NULL,
-    price FLOAT NULL
+    price FLOAT NULL,
+    bought INT UNSIGNED NULL DEFAULT 0
     )");
 
 // Sample data
