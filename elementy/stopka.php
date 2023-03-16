@@ -8,7 +8,7 @@
     <p class='text-center text-gray-100'>Data aktualna:
         <span class="bg-gray-800 rounded-full p-1 text-sm font-semibold">
             <?php
-            $date = date("d.m.Y");
+            $date = date("d.m.Y H:i:s");
             echo $date;
             ?>
         </span>

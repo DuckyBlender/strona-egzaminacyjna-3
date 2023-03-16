@@ -33,8 +33,8 @@
             echo "<div class='flex flex-col justify-center items-center'>";
             echo "<p>Podaj hasło:</p>";
             echo "<form method='post'>";
-            echo "<input type='password' name='password' class='bg-gray-900 text-gray-200 rounded-lg p-4 ' placeholder='Hasło'>";
-            echo "<input type='submit' value='Zaloguj' class='bg-gray-900 text-gray-200 rounded-lg p-4'>";
+            echo "<input type='password' name='password' class='bg-gray-900 text-gray-200 rounded-lg p-4 m-4' placeholder='Hasło'>";
+            echo "<input type='submit' value='Zaloguj' class='bg-gray-900 text-gray-200 rounded-lg p-4 m-4'>";
             echo "</form>";
             echo "</div>";
             return;
@@ -44,11 +44,13 @@
         // We have the password, check if it is correct
         $password = $_POST['password'];
         if ($password != 'klas') {
-            echo "<p>Niepoprawne hasło.</p>";
+            echo "<div class='flex flex-col justify-center items-center'>";
+            echo "<p>Niepoprawne hasło</p>";
             echo "<form method='post'>";
-            echo "<input type='password' name='password' class='bg-gray-900 text-gray-100 border-2 border-gray-900 rounded-lg p-4' placeholder='Hasło'>";
-            echo "<input type='submit' value='Zaloguj' class='bg-gray-900 text-gray-100 border-2 border-gray-900 rounded-lg p-4'>";
+            echo "<input type='password' name='password' class='bg-gray-900 text-gray-200 rounded-lg p-4 m-4' placeholder='Hasło'>";
+            echo "<input type='submit' value='Zaloguj' class='bg-gray-900 text-gray-200 rounded-lg p-4 m-4'>";
             echo "</form>";
+            echo "</div>";
             return;
         }
         // The password is correct, show the database
