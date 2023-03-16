@@ -9,7 +9,7 @@
     <link rel='icon' href='./img/logo.svg' type='image/x-icon' />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-800 text-gray-100">
@@ -70,7 +70,40 @@
         // Select data
         $result = $conn->query("SELECT * FROM lornetki");
 
+        // Show the database structure
+        echo "<p>Struktura bazy danych:</p>";
+        echo "<div class='flex justify-center'>";
+        // Query the database structure
+        // The result should look like this
+        // ---
+        // id | int
+        // title | varchar
+        // description | varchar
+        // img | varchar
+        // price | float
+        // ---
+
+        $columns = $conn->query("SHOW COLUMNS FROM lornetki");
+        echo "<table class='table-auto'>";
+        echo "<tr>";
+        echo "<th class='px-4 py-2'>Nazwa</th>";
+        echo "<th class='px-4 py-2'>Typ</th>";
+        echo "</tr>";
+        while ($row = $columns->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td class='border px-4 py-2'>" . $row['Field'] . "</td>";
+            echo "<td class='border px-4 py-2'>" . $row['Type'] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+
+
+
+
+
+
         // Display data
+        echo "<p>Wszystkie rekordy:</p>";
         echo "<div class='flex justify-center'>";
         echo "<table class='table-auto'>";
         echo "<tr>";

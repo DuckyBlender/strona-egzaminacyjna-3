@@ -9,7 +9,6 @@
     <link rel='icon' href='./img/logo.svg' type='image/x-icon' />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src='main.js'></script>
 </head>
 
 <body class="bg-gray-800 text-gray-100">
