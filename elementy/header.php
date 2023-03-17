@@ -2,7 +2,7 @@
     <div class="mx-auto container flex justify-between items-center">
         <h1 class="text-gray-100 text-3xl font-bold">
             <a href="/" class="text-gray-100 font-bold">
-                <img src="./img/logo.svg" alt="Logo" class="h-12 inline-block animate-pulse">
+                <img src="./img/animated.gif" alt="Logo" class="h-12 inline-block animate-pulse">
                 Alan-Zoom
             </a>
         </h1>

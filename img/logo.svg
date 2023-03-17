@@ -27,66 +27,153 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.0444209"
-     inkscape:cx="161.81216"
-     inkscape:cy="545.27824"
+     inkscape:zoom="0.36925855"
+     inkscape:cx="1500.3038"
+     inkscape:cy="375.07595"
      inkscape:window-width="1198"
      inkscape:window-height="1000"
-     inkscape:window-x="1795"
-     inkscape:window-y="553"
+     inkscape:window-x="3199"
+     inkscape:window-y="503"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <rect
+       x="1622.1696"
+       y="-119.1577"
+       width="823.27139"
+       height="988.46729"
+       id="rect496" />
+  </defs>
   <g
      inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <circle
-       style="fill:#ffffff;stroke-width:0.264583"
-       id="path309"
-       cx="58.645931"
-       cy="65.739174"
-       r="33.312916" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.264583"
-       id="path309-5"
-       cx="131.47836"
-       cy="65.738914"
-       r="33.312916" />
-    <ellipse
-       style="fill:#000000;stroke-width:0.264583"
-       id="path531"
-       cx="58.392605"
-       cy="73.212418"
-       rx="17.099785"
-       ry="23.559706" />
-    <ellipse
-       style="fill:#000000;stroke-width:0.264583"
-       id="path531-6"
-       cx="132.99835"
-       cy="73.212425"
-       rx="17.099785"
-       ry="23.559706" />
-    <rect
-       style="fill:#4d4d4d;stroke-width:0.264583"
-       id="rect819"
-       width="158.07803"
-       height="28.372978"
-       x="18.239773"
-       y="112.4786"
-       ry="5.0666027" />
-    <text
-       xml:space="preserve"
-       style="font-size:23.9803px;fill:#000000;stroke-width:0.449629"
-       x="22.146208"
-       y="141.03426"
-       id="text611"
-       transform="scale(1.0393448,0.96214463)"><tspan
-         id="tspan609"
-         style="font-size:23.9803px;fill:#ffffff;stroke-width:0.449629"
-         x="22.146208"
-         y="141.03426"
-         sodipodi:role="line">ALAN-ZOOM</tspan></text>
+    <g
+       id="g543"
+       inkscape:label="1">
+      <rect
+         style="fill:#4d4d4d;stroke-width:0.223666"
+         id="rect262"
+         width="176.98192"
+         height="175.54887"
+         x="238.60313"
+         y="7.1652594"
+         ry="4.2656965" />
+      <circle
+         style="fill:#ffffff;stroke-width:0.264583"
+         id="circle196"
+         cx="288.65076"
+         cy="65.739174"
+         r="33.312916" />
+      <circle
+         style="fill:#ffffff;stroke-width:0.264583"
+         id="circle198"
+         cx="361.48318"
+         cy="65.738914"
+         r="33.312916" />
+      <ellipse
+         style="fill:#000000;stroke-width:0.264583"
+         id="ellipse200"
+         cx="279.79913"
+         cy="72.495895"
+         rx="17.099785"
+         ry="23.559706" />
+      <ellipse
+         style="fill:#000000;stroke-width:0.264583"
+         id="ellipse202"
+         cx="354.40488"
+         cy="72.495903"
+         rx="17.099785"
+         ry="23.559706" />
+      <rect
+         style="fill:#4d4d4d;stroke-width:0.264583"
+         id="rect204"
+         width="158.07803"
+         height="28.372978"
+         x="248.2446"
+         y="112.4786"
+         ry="5.0666027" />
+      <text
+         xml:space="preserve"
+         style="font-size:25.4px;fill:#000000;stroke-width:0.449629"
+         x="312.87753"
+         y="136.56595"
+         id="text208"
+         transform="scale(1.0393448,0.96214462)"><tspan
+           id="tspan206"
+           style="font-size:25.4px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.449629;font-weight:bold"
+           x="312.87753"
+           y="136.56595"
+           sodipodi:role="line">ALAN</tspan><tspan
+           style="font-size:25.4px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.449629;font-weight:bold"
+           x="316.17953"
+           y="168.31595"
+           id="tspan492"
+           sodipodi:role="line">ZOOM </tspan></text>
+    </g>
+    <g
+       id="g554"
+       inkscape:label="2">
+      <rect
+         style="fill:#4d4d4d;stroke-width:0.223666"
+         id="rect516"
+         width="176.98192"
+         height="175.54887"
+         x="427.76599"
+         y="7.1652594"
+         ry="4.2656965" />
+      <circle
+         style="fill:#ffffff;stroke-width:0.264583"
+         id="circle518"
+         cx="477.8136"
+         cy="65.739174"
+         r="33.312916" />
+      <circle
+         style="fill:#ffffff;stroke-width:0.264583"
+         id="circle520"
+         cx="550.64606"
+         cy="65.738914"
+         r="33.312916" />
+      <ellipse
+         style="fill:#000000;stroke-width:0.264583"
+         id="ellipse522"
+         cx="486.1586"
+         cy="72.495895"
+         rx="17.099785"
+         ry="23.559706" />
+      <ellipse
+         style="fill:#000000;stroke-width:0.264583"
+         id="ellipse524"
+         cx="560.76434"
+         cy="72.495903"
+         rx="17.099785"
+         ry="23.559706" />
+      <rect
+         style="fill:#4d4d4d;stroke-width:0.264583"
+         id="rect526"
+         width="158.07803"
+         height="28.372978"
+         x="437.40744"
+         y="112.4786"
+         ry="5.0666027" />
+      <text
+         xml:space="preserve"
+         style="font-size:25.4px;fill:#000000;stroke-width:0.449629"
+         x="494.87955"
+         y="136.56595"
+         id="text532"
+         transform="scale(1.0393448,0.96214462)"><tspan
+           id="tspan528"
+           style="font-weight:bold;font-size:25.4px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.449629"
+           x="494.87955"
+           y="136.56595"
+           sodipodi:role="line">ALAN</tspan><tspan
+           style="font-weight:bold;font-size:25.4px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.449629"
+           x="498.18155"
+           y="168.31595"
+           id="tspan530"
+           sodipodi:role="line">ZOOM </tspan></text>
+    </g>
   </g>
 </svg>
