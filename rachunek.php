@@ -12,16 +12,7 @@ if (empty($lornetki)) {
     return;
 }
 
-// Connect to the database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include_once("./elementy/conn_db.php");
 
 // Select the database
 $conn->select_db("lornetki");
